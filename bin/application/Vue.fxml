@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="272.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VueController">
+   <children>
+      <Label fx:id="billLbl" layoutX="133.0" layoutY="112.0" prefHeight="17.0" prefWidth="22.0" text="Bill" />
+      <Label fx:id="tipLbl" layoutX="246.0" layoutY="112.0" prefHeight="17.0" prefWidth="32.0" text="Tip %" />
+      <Label fx:id="nbLbl" layoutX="353.0" layoutY="112.0" prefHeight="17.0" prefWidth="65.0" text="Nb people" />
+      <TextField fx:id="billInput" layoutX="155.0" layoutY="108.0" prefHeight="25.0" prefWidth="56.0" />
+      <TextField fx:id="tipInput" layoutX="282.0" layoutY="108.0" prefHeight="25.0" prefWidth="56.0" />
+      <TextField fx:id="nbInput" layoutX="418.0" layoutY="108.0" prefHeight="25.0" prefWidth="56.0" />
+      <Button fx:id="calculateBtn" layoutX="87.0" layoutY="156.0" mnemonicParsing="false" onAction="#calculate" prefHeight="41.0" prefWidth="445.0" style="-fx-background-color: green;" text="CALCULATE THE TIP" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tipPerPersonInput" layoutX="206.0" layoutY="226.0" prefHeight="25.0" prefWidth="56.0" style="-fx-background-color: violet;" />
+      <TextField fx:id="totalPerPersonInput" layoutX="401.0" layoutY="226.0" prefHeight="25.0" prefWidth="56.0" style="-fx-background-color: violet;" />
+      <Label fx:id="tipPerPersonLbl" layoutX="119.0" layoutY="230.0" prefHeight="17.0" prefWidth="95.0" text="Tip (per person)" />
+      <Label fx:id="totalPerPersonLbl" layoutX="299.0" layoutY="230.0" prefHeight="17.0" prefWidth="95.0" text="Total (per person)" />
+      <Label fx:id="dateLbl" layoutX="147.0" layoutY="66.0" prefHeight="17.0" prefWidth="95.0" text="Date of tip calcul" />
+      <Label fx:id="errorLbl" layoutX="32.0" layoutY="14.0" prefHeight="38.0" prefWidth="551.0" style="-fx-font-style: red;" textFill="#e41616">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dateInput" layoutX="242.0" layoutY="62.0" onAction="#fillFile" />
+   </children>
+</Pane>
